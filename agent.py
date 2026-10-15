@@ -462,7 +462,6 @@ def double_click_saved(name, instruction):
     budget_human_double_click(x, y)
 
 def budget_human_type(text):
-    # 【修复：略微放慢搜索框打字速度(0.06)，比原先的0.03慢，但依然能防卡顿】
     pyautogui.write(text, interval=0.06)
 
 # ==========================================================
@@ -1012,7 +1011,7 @@ def create_event_details():
     # Controlled lag demonstration
     type_text("Fullerton H")
 
-    # 【微调：发呆时间从25秒减为20秒】
+    
     print("Pausing for 20 seconds... (Daydreaming)")
     time.sleep(20.0 + random.uniform(-1.0, 3.0))
 
