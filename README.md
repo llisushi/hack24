@@ -29,17 +29,17 @@ The agent is pre-configured and ready to run inside our allocated evaluation VM.
 
 ### 2. Pre-Configured Files & File Locations
 
-All required scripts, calibration data, and target documents are already set up inside the VM:
+All required scripts, calibration coordinates, and target budget documents are already placed in their required directories inside the VM:
 
-- **Script & Calibration Files (`Downloads` folder):**
-  - `merge ver 2.0.py` (Main agent script)
-  - `wps_click_positions.json` (Pre-calibrated WPS toolbar coordinates)
-  - `budget_click_positions.json` (Pre-calibrated budget UI coordinates)
-  - *Path:* `C:\Users\<User>\Downloads\`
+- **Script & Coordinate Configuration (`Downloads\FINAL\`):**
+  - `agent.py` *(Main execution script)*
+  - `wps_click_positions.json` *(Pre-calibrated toolbar button coordinates)*
+  - `budget_click_positions.json` *(Pre-calibrated UI navigation coordinates)*
+  - *Full Path:* `C:\Users\<User>\Downloads\FINAL\`
 
 - **Target Budget Spreadsheet (`Desktop`):**
   - `Budget List for Annual Dinner (draft)` (`.xlsx`, `.xls`, `.xlsm`, `.et`, or `.csv`)
-  - *Path:* `C:\Users\<User>\Desktop\`
+  - *Full Path:* `C:\Users\<User>\Desktop\`
 
 > **Note:** The script will automatically generate the local workspace folder (`Desktop/AnnualDinner2026/`) and required email/web simulation templates on initial execution.
 
