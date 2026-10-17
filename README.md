@@ -16,9 +16,41 @@ An autonomous desktop agent simulating realistic, human-paced corporate office w
 
 ---
 
-## 📂 Pre-Run File Placements
+## 🖥️ Evaluation Environment & Execution Instructions
 
-Before starting the agent, make sure the following file exists on your **Desktop**:
-- `Budget List for Annual Dinner (draft)` (accepted formats: `.xlsx`, `.xls`, `.xlsm`, `.et`, or `.csv`)
+The agent is pre-configured and ready to run inside our allocated evaluation VM.
+
+### 1. Access the VM
+- **Node:** `pve-03`
+- **VM ID / Name:** `3241 (vm-team24-user1)`
+- Open the console and log into the Windows desktop environment.
+
+---
+
+### 2. Pre-Configured Files & File Locations
+
+All required scripts, calibration data, and target documents are already set up inside the VM:
+
+- **Script & Calibration Files (`Downloads` folder):**
+  - `merge ver 2.0.py` (Main agent script)
+  - `wps_click_positions.json` (Pre-calibrated WPS toolbar coordinates)
+  - `budget_click_positions.json` (Pre-calibrated budget UI coordinates)
+  - *Path:* `C:\Users\<User>\Downloads\`
+
+- **Target Budget Spreadsheet (`Desktop`):**
+  - `Budget List for Annual Dinner (draft)` (`.xlsx`, `.xls`, `.xlsm`, `.et`, or `.csv`)
+  - *Path:* `C:\Users\<User>\Desktop\`
 
 > **Note:** The script will automatically generate the local workspace folder (`Desktop/AnnualDinner2026/`) and required email/web simulation templates on initial execution.
+
+---
+
+### 3. How to Run the Agent
+
+1. Open the **`Downloads`** folder in File Explorer.
+2. Double-click **`merge ver 2.0.py`** (it will open directly in **Python IDLE**).
+3. In the IDLE window, press **`F5`** on your keyboard (or click **Run** → **Run Module** in the top menu).
+4. **Hands-Off Execution:** 
+   Once the script begins running, leave the mouse and keyboard untouched. The agent will autonomously execute the entire simulated workflow (~15 minutes) across WPS Writer, Outlook/Chrome, File Explorer, and WPS Spreadsheets.
+
+> **Emergency Stop / Fail-Safe:** If you need to stop the automation early, forcefully slam the mouse cursor into any of the screen's four outer corners to trigger PyAutoGUI's built-in fail-safe.
