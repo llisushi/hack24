@@ -43,14 +43,4 @@ All required scripts, calibration coordinates, and target budget documents are a
 
 > **Note:** The script will automatically generate the local workspace folder (`Desktop/AnnualDinner2026/`) and required email/web simulation templates on initial execution.
 
----
 
-### 3. How to Run the Agent
-
-1. Open the **`Downloads`** folder in File Explorer.
-2. Double-click **`merge ver 2.0.py`** (it will open directly in **Python IDLE**).
-3. In the IDLE window, press **`F5`** on your keyboard (or click **Run** → **Run Module** in the top menu).
-4. **Hands-Off Execution:** 
-   Once the script begins running, leave the mouse and keyboard untouched. The agent will autonomously execute the entire simulated workflow (~15 minutes) across WPS Writer, Outlook/Chrome, File Explorer, and WPS Spreadsheets.
-
-> **Emergency Stop / Fail-Safe:** If you need to stop the automation early, forcefully slam the mouse cursor into any of the screen's four outer corners to trigger PyAutoGUI's built-in fail-safe.
